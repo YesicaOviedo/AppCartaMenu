@@ -1,12 +1,13 @@
 import React from "react";
-import Menu from "../Menu";
+import NavBar from "../NavBar";
+
 
 export default function Home(){
 
 
     return(
-        <div>
-            <Menu/>
+        <div className="menu">
+            <NavBar/>
         </div>
     );
 }
