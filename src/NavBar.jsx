@@ -21,7 +21,7 @@ export default function NavBar(){
         .catch(error=>console.log("error"))
     }
     return(
-        <div className="separador">
+        <div className="contenedor">
             <div className="estiloBarra">
                 <div  className="div-input">
                     <input
@@ -34,7 +34,7 @@ export default function NavBar(){
                     <button className="btn" onClick={Buscar}>Search</button>
                 </div>
             </div>
-            <div>
+            <div className="contenedorRecetas">
                 {recetas &&
                     <ListaRecetas recetas={recetas}/>}
             </div>

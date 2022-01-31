@@ -17,13 +17,16 @@ export default function Receta({receta}) {
   }, []);
 
   return (
-    <article>
       <ul>
         <li type= "none">
-          <h4>{receta.title}</h4>
-          <div dangerouslySetInnerHTML={{__html:"<p>" + descripcion + "</p>"}}/>
+        <div className="card" style={{width: "18rem", height: "18rem",overflow: "auto"}}>
+          <div className="card-body">
+              <h5 className="card-title">{receta.title}</h5>
+              <div className="card-text" dangerouslySetInnerHTML={{__html:"<p>" + descripcion + "</p>"}}/>
+              <a href="#" className="btn btn-primary">agregar</a>
+          </div>
+        </div>
         </li>
       </ul>
-    </article>
   );
 }
